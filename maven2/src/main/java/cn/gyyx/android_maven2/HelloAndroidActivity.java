@@ -1,9 +1,11 @@
 package cn.gyyx.android_maven2;
 
+import cn.gyyx.libary.MathUtil;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.Toast;
 
 public class HelloAndroidActivity extends Activity {
 
@@ -17,6 +19,10 @@ public class HelloAndroidActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        
+        MathUtil mathUtil = new MathUtil();
+        int sum = mathUtil.getSun(10, 20);
+        Toast.makeText(this, sum+"", 0).show();
     }
 
     @Override
