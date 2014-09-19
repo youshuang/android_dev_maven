@@ -1,5 +1,6 @@
 package cn.gyyx.android_maven2;
 
+import cn.gyyx.common.util.MathUtill2;
 import cn.gyyx.libary.MathUtil;
 import android.app.Activity;
 import android.os.Bundle;
@@ -23,6 +24,13 @@ public class HelloAndroidActivity extends Activity {
         MathUtil mathUtil = new MathUtil();
         int sum = mathUtil.getSun(10, 20);
         Toast.makeText(this, sum+"", 0).show();
+        
+        
+        MathUtill2 mathUtill2 = new MathUtill2();
+       int acc = mathUtill2.getAcc(2, 3);
+        
+       Toast.makeText(this, acc+"", 0).show();
+
     }
 
     @Override

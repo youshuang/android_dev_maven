@@ -2,11 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>cn.gyyx.android_maven2</groupId>
-	<artifactId>maven2</artifactId>
+	<groupId>cn.gyyx.common</groupId>
+	<artifactId>util</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>apk</packaging>
-	<name>maven2</name>
+	<packaging>apklib</packaging>
+	<name>util</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -22,26 +22,6 @@
 			<version>4.1.1.4</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		
-		
-		<dependency>
-			<groupId>cn.gyyx.libary</groupId>
-  <artifactId>libary</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-		</dependency>
-		
-		
-		<dependency>
-		
-		<groupId>cn.gyyx.common</groupId>
-	<artifactId>util</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<type>apklib</type>
-		</dependency>
-		
-		
-		
 	</dependencies>
 	<build>
 		<finalName>${project.artifactId}</finalName>
@@ -77,7 +57,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<execute >            								 <runOnIncremental>false</runOnIncremental>
+											<execute >            								 <runOnIncremental>false</runOnIncremental>
 </execute >
 
 									</action>
